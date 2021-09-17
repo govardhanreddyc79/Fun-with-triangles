@@ -1,7 +1,7 @@
 var inputOne = document.querySelector("#side1")
 var inputTwo = document.querySelector("#side2")
 var inputThree = document.querySelector("#side3")
-var areaBtn = document.querySelector(".area-btn")
+var areaBtn = document.querySelector(".sub-btn")
 var displayMessage = document.querySelector(".output-msg")
 
 

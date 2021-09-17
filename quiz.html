@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <h1>Quiz on triangles</h1>
+    <nav class="navigation container">
+        <div class="nav-brand">Fun With Triangles</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="isTriangle.html">Is Triangle ?</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link  link-active" href="quiz.html">Quiz</a>
+                </li>
+            <li class="list-item-inline">
+                <a class="link" href="hypotenuse.html">Hypotenuse</a>
+                </li>
+            <li class="list-item-inline">
+                <a class="link" href="area.html">Area of Triangle</a>
+                </li>
+        </ul>
+    </nav>
+        <h1 class="heading">Quiz on triangles</h1>
         <h3>For each correct answer you will get 1 point</h3>
         
         <form class="quiz-form">
@@ -27,11 +44,100 @@
                 <label for="btn-2"><input type="radio" name="answer-2" id="btn-2" value="acute">acute</label>               
                 <label for="btn-3"><input type="radio" name="answer-2" id="btn-3" value="right angled">right angled</label>
             </div>
+
+            <div class="question-container">
+                <p>A triangle can have</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-3" id="btn-1" value="one right angle">one right angle</label>            
+                <label for="btn-2"><input type="radio" name="answer-3" id="btn-2" value="two right angles°">two right angles</label>          
+            </div>
+
+            <div class="question-container">
+                <p>Which of the following can form a right angled triangle?</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-4" id="btn-1" value="14, 15, 26">14, 15, 26</label>            
+                <label for="btn-2"><input type="radio" name="answer-4" id="btn-2" value="12, 16, 20">12, 16, 20</label>          
+            </div>
+
+            <div class="question-container">
+                <p>Which of the following triangles are always similar?</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-5" id="btn-1" value="Equilateral triangle">Equilateral triangle</label>            
+                <label for="btn-2"><input type="radio" name="answer-5" id="btn-2" value="Isosceles triangle">Isosceles triangle</label>          
+            </div>
+
+            <div class="question-container">
+                <p>If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-6" id="btn-1" value="100°">100°</label>            
+                <label for="btn-2"><input type="radio" name="answer-6" id="btn-2" value="85°">85°</label>          
+            </div>
+
+            <div class="question-container">
+                <p>If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-7" id="btn-1" value="30°">30°</label>            
+                <label for="btn-2"><input type="radio" name="answer-7" id="btn-2" value="10°">10°</label>          
+            </div>
+
+            <div class="question-container">
+                <p>The perimeter of scalene triangle with sides a, b, c is</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-8" id="btn-1" value="a + b + c">a + b + c</label>            
+                <label for="btn-2"><input type="radio" name="answer-8" id="btn-2" value="2a">2a</label>
+                <label for="btn-3"><input type="radio" name="answer-8" id="btn-3" value="None of these">None of these</label>              
+            </div>
+
+            <div class="question-container">
+                <p>A scalene triangle has ___ lines of symmetry</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-9" id="btn-1" value="two">two</label>            
+                <label for="btn-2"><input type="radio" name="answer-9" id="btn-2" value="no">no</label>
+                <label for="btn-3"><input type="radio" name="answer-9" id="btn-3" value="15">15</label>              
+            </div>
+
+            <div class="question-container">
+                <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
+            
+                <label for="btn-1"><input type="radio" name="answer-10" id="btn-1" value=85°">85°</label>            
+                <label for="btn-2"><input type="radio" name="answer-10" id="btn-2" value="65°">65°</label>
+                <label for="btn-3"><input type="radio" name="answer-10" id="btn-3" value="45°">45°</label>              
+            </div>
                 
         </form>
 
-        <button class="btn-sub">Submit</button>
+        <button class="sub-btn">Submit</button>
         <h3 id="output-msg"></h3>
+
+        <footer>
+            <p>© | 2021 | govardhanreddy</p>
+            <ul class="footer-list">
+                <li>
+                    <a class="links" href="https://github.com/govardhanreddyc79/" target="_blank">
+                      <img src="images/github.png" alt="github" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="links" href="https://discord.com/" target="_blank">
+                      <img src="images/discord.png" alt="discord" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="links" href="https://twitter.com/reddygov16" target="_blank">
+                      <img src="images/twitter.png" alt="twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="links"
+                      href="https://www.instagram.com/neogcamp"
+                      target="_blank"
+                    >
+                      <img src="images/instagram.png" alt="instagram" />
+                    </a>
+                  </li>
+            </ul>
+        </footer>
 
         <script src="quiz.js"></script>
     

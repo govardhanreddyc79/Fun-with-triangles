@@ -1,6 +1,6 @@
 var base = document.querySelector("#base")
 var height = document.querySelector("#height")
-var hypotenuseBtn = document.querySelector(".hypotenuse-btn")
+var hypotenuseBtn = document.querySelector(".sub-btn")
 var displayMessage = document.querySelector(".output-msg")
 
 

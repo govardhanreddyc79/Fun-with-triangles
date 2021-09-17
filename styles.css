@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+:root {
+    --primary-color:#EF4444;
+    --white: white;
+    --heading-color:black;
+}
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+body {
+    text-align: center;
+    font-family:'Source Serif Pro', serif;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color:var(--white);
+    border-bottom-left-radius: 0.5rem ;
+    max-height: 150px;
+}
+.navigation .nav-brand {
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+}
+.navigation .link {
+    color:var(--white);
+}
+.navigation .link-active {
+    font-weight: bold;
+}
+.navigation .nav-pills {
+    text-align: right;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    font-size: large;
+    margin-top: 0;
+}
+
+
+.list-non-bullet {
+    list-style: none;
+}
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+.heading {
+    color: var(heading-color);
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    font-weight:1000px
+}
+
+.sub-btn {
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    border-radius: 0.5rem;
+    color:var(--white);
+    font-size: larger;
+    border: 2px solid var(--primary-color);
+    background-color:var(--primary-color);
+    cursor: pointer;
+    display: block;
+    
+}
+.question-container{
+    padding: 1rem 0rem;
+    margin: 1rem auto;
+    width: 85%;
+}
+.question-container p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+} 
+.question-container input{
+    display: inline;
+    width: 20px;
+}
+.question-container label{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline;
+    font-size:1.2rem;
+    color: var(--heading-color);
+}
+label {
+    padding: 0.5rem;
+    font-size:1.5rem;
+    text-align: center;
+    margin: 0.7rem;
+    display: block;
+    color: var(--primary-color);
+}
+input {
+     margin: auto;
+     padding: 0.5rem;
+     border-radius: 0.3rem;
+     border: 2px solid var(--primary-color);
+     font-size: larger;
+     width: 100%;
+     display: block;
+     max-width: 258px;
+
+ }
+ #opt-message{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+ }
+
+footer {
+    margin-top: 8rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  footer p {
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .footer-list {
+    margin:auto;
+    padding-inline-start: 0px;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+    text-decoration: none;
+  }
+  img {
+    width: 30px;
+    padding: 0rem 0.5rem;
+  }
