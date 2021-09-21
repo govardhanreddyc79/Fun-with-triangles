@@ -6,10 +6,10 @@ var displayMessage = document.querySelector(".output-msg")
 
 
 function calculateArea(){
-    sideOne = Number(inputOne.value)
-    sideTwo = Number(inputTwo.value)
-    sideThree = Number(inputThree.value)
-    if(sideOne != 0 & sideTwo != 0 & sideThree != 0)
+    sideOne = (inputOne.value)
+    sideTwo = (inputTwo.value)
+    sideThree = (inputThree.value)
+    if(sideOne != '' & sideTwo != '' & sideThree != '')
     {
         if(sideOne >0 & sideTwo >0 & sideThree >0)
         {
