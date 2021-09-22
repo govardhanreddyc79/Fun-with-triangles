@@ -9,8 +9,8 @@ function calculateHypotenuse(){
     {
         if(base.value > 0 & height.value > 0)
         {
-            const baseSquare = (base.value)**2
-            const heightSquare = (height.value)**2
+            const baseSquare = Number((base.value))**2
+            const heightSquare = Number((height.value))**2
             const hypotenuse = Math.sqrt(baseSquare+heightSquare)
             showMessage("The length of hypotenuse is " + hypotenuse)
         }
