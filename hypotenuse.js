@@ -5,12 +5,14 @@ var displayMessage = document.querySelector(".output-msg")
 
 
 function calculateHypotenuse(){
-    if(base.value != '' & height.value != '')
+    const inputBase = base.value
+    const inputHeight = height.value
+    if(inputBase != '' & inputHeight != '')
     {
-        if(base.value > 0 & height.value > 0)
+        if(inputBase > 0 & inputHeight > 0)
         {
-            const baseSquare = Number((base.value))**2
-            const heightSquare = Number((height.value))**2
+            const baseSquare = Number(inputBase)**2
+            const heightSquare = Number((inputHeight))**2
             const hypotenuse = Math.sqrt(baseSquare+heightSquare)
             showMessage("The length of hypotenuse is " + hypotenuse)
         }

@@ -6,15 +6,14 @@ var displayMessage = document.querySelector(".output-msg")
 
 
 function calculateArea(){
-    sideOne = (inputOne.value)
-    sideTwo = (inputTwo.value)
-    sideThree = (inputThree.value)
+    sideOne = inputOne.value
+    sideTwo = inputTwo.value
+    sideThree = inputThree.value
     if(sideOne != '' & sideTwo != '' & sideThree != '')
     {
         if(sideOne >0 & sideTwo >0 & sideThree >0)
         {
             var semiPerimeter = (Number(sideOne) + Number(sideTwo) + Number(sideThree))/2
-            console.log(semiPerimeter)
             const areaOfTriangle = Math.sqrt(semiPerimeter*(semiPerimeter-sideOne)*(semiPerimeter-sideTwo)*(semiPerimeter-sideThree))
             showMessage("Area of a triangle using heron's formula is "+ areaOfTriangle.toFixed(3) + " units.")
         

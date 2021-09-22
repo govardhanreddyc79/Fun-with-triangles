@@ -1,16 +1,19 @@
-var triangleForm = document.querySelector(".triangle-form")
-var angle1 = document.querySelector("#angle1")
-var angle2 = document.querySelector("#angle2")
-var angle3 = document.querySelector("#angle3")
+// var triangleForm = document.querySelector(".triangle-form")
+var inputOne = document.querySelector("#angle1")
+var inputTwo = document.querySelector("#angle2")
+var inputThree = document.querySelector("#angle3")
 const isTriangleBtn = document.querySelector(".sub-btn")
 const displayMessage = document.querySelector(".output-msg")
 
 
 function isTriangle(){
-    if(angle1.value != '' & angle2.value != '' & angle3.value != ''){
-        if(angle1.value >0 & angle2.value >0 & angle3.value >0)
+    const AngleOne = inputOne.value
+    const AngleTwo = inputTwo.value
+    const AngleThree = inputThree.value
+    if(AngleOne != '' & AngleTwo != '' & AngleThree != ''){
+        if(AngleOne >0 & AngleTwo >0 & AngleThree >0)
         {
-            const sumOfAngles = calculateSumOfAngles()
+            const sumOfAngles = calculateSumOfAngles(AngleOne, AngleTwo, AngleThree)
             if(sumOfAngles === 180){
                 showMessage("Yay, the angles form a triangle!")
             }else{
@@ -26,8 +29,8 @@ function isTriangle(){
    
 }
 
-function calculateSumOfAngles(){
-     var angleSum = Number(angle1.value) + Number(angle2.value) + Number(angle3.value)
+function calculateSumOfAngles(AngleOne, AngleTwo, AngleThree){
+     var angleSum = Number(AngleOne) + Number(AngleTwo) + Number(AngleThree)
     return angleSum
 }
 
