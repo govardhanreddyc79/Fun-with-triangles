@@ -13,7 +13,7 @@ function calculateHypotenuse(){
         {
             const baseSquare = Number(inputBase)**2
             const heightSquare = Number((inputHeight))**2
-            const hypotenuse = Math.sqrt(baseSquare+heightSquare)
+            const hypotenuse = (Math.sqrt(baseSquare+heightSquare)).toFixed(2)
             showMessage("The length of hypotenuse is " + hypotenuse)
         }
         else

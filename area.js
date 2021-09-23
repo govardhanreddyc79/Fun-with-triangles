@@ -14,8 +14,8 @@ function calculateArea(){
         if(sideOne >0 & sideTwo >0 & sideThree >0)
         {
             var semiPerimeter = (Number(sideOne) + Number(sideTwo) + Number(sideThree))/2
-            const areaOfTriangle = Math.sqrt(semiPerimeter*(semiPerimeter-sideOne)*(semiPerimeter-sideTwo)*(semiPerimeter-sideThree))
-            showMessage("Area of a triangle using heron's formula is "+ areaOfTriangle.toFixed(3) + " units.")
+            const areaOfTriangle = (Math.sqrt(semiPerimeter*(semiPerimeter-sideOne)*(semiPerimeter-sideTwo)*(semiPerimeter-sideThree))).toFixed(3)
+            showMessage("Area of a triangle using heron's formula is "+ areaOfTriangle + " units.")
         
         }else{
             showMessage("The input values should be positive")
